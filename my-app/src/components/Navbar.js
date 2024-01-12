@@ -9,6 +9,7 @@ const Navbar = () => {
             </div>
             <div>
                 {/* navigation */}
+                <div>Home</div>
                 <div>CCTV</div>
                 <div>Laptop</div>
                 <div>Spare Parts</div>
