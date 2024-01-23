@@ -191,6 +191,93 @@ export default function Home() {
           >Find out more</button>
         </div>
       </div>
+      <div
+      style={{
+        backgroundImage:`url("https://i.pinimg.com/originals/bc/28/c9/bc28c9981530233b59d20b93ac5f47d3.jpg")`,
+        backgroundSize: 'cover',
+        width: '100%',
+        height:"700px",
+        padding:"80px",
+        paddingLeft:"120px"
+      }}
+      >
+        <h1
+        style={{
+          color:"#ffffff",
+          fontSize:"50px",
+          fontWeight:"600"
+        }}
+        >Trust Us with Your Laptop and Computer Needs</h1>
+        <p
+        style={{
+          color:"#ffffff",
+          fontSize:"20px",
+          fontWeight:"500",
+          width:"50%",
+          paddingTop:"100px"
+        }}
+        >Our experienced technicians ensure prompt and efficient service, so you can focus on your business while we take care of your technology requirements.</p>
+        <button
+        style={{
+          color:"#000000",
+          backgroundColor:"#ffffff",
+          fontSize:"20px",
+          fontWeight:"600",
+          padding:"5px 15px",
+          borderRadius:"20px",
+          marginTop:"100px"
+        }}
+        >Contact Us Today</button>
+      </div>
+      <div
+      style={{
+        backgroundColor:"#14110e",
+        padding:"110px",
+      }}
+      >
+        <h1
+        style={{
+          fontSize:"50px",
+          fontWeight:"600",
+          color:"#ffffff",
+          display:"flex",
+          justifyContent:"center",
+        }}
+        >Why us?</h1>
+        <p
+        style={{
+          color:"#ffffff",
+          fontSize:"20px",
+          fontWeight:"500",
+          textAlign:"center",
+          padding:"50px"
+        }}
+        >Jainam Infotech is more than just a service provider; we are your trusted partner in the world of laptops and computers. With our expertise in repairing, installing CCTV systems, and selling top-notch laptops and computers, we offer comprehensive solutions tailored to meet your specific needs. Our commitment to customer satisfaction sets us apart from the competition. Contact us today at 123-456-7890 to experience our professional services firsthand.</p>
+        <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+        >
+        <button
+       style={{
+        color: "#ffffff",
+        backgroundColor: "#375a3f",
+        height: "50px",
+        width: "180px",
+        borderRadius: "35px",
+        fontSize: "20px",
+        fontWeight: "500",
+      }}
+        >Contact us</button>
+        </div>
+      </div>
+      <div>
+        {
+          //review section build after API
+        }
+      </div>
     </div>
   )
 }

@@ -17,10 +17,13 @@ const Navbar = () => {
     const navigate =useNavigate();
     return(
         <div id="container"
-        style={{display:"flex",
+        style={{position:"fixed",
+                width:"100%",
+                display:"flex",
                 justifyContent:"space-between",
                 padding:"10px 15px",
-                backgroundColor:"#000000"
+                backgroundColor:"#000000",
+                // position:"sticky"
             }}
         >
             <div>
