@@ -252,7 +252,7 @@ export default function Home() {
           textAlign:"center",
           padding:"50px"
         }}
-        >Jainam Infotech is more than just a service provider; we are your trusted partner in the world of laptops and computers. With our expertise in repairing, installing CCTV systems, and selling top-notch laptops and computers, we offer comprehensive solutions tailored to meet your specific needs. Our commitment to customer satisfaction sets us apart from the competition. Contact us today at 123-456-7890 to experience our professional services firsthand.</p>
+        >Jainam Infotech is more than just a service provider; we are your trusted partner in the world of laptops and computers. With our expertise in repairing, installing CCTV systems, and selling top-notch laptops and computers, we offer comprehensive solutions tailored to meet your specific needs. Our commitment to customer satisfaction sets us apart from the competition. Contact us today to experience our professional services firsthand.</p>
         <div
         style={{
           display: 'flex',

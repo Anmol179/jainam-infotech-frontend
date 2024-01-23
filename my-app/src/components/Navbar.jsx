@@ -87,7 +87,7 @@ const Navbar = () => {
                 {/* contact */}
                 <button
                  style={{
-                    backgroundColor: isHovered ? 'green' : 'white',
+                    backgroundColor: isHovered ? '#375a3f' : '#ffffff',
                     padding: '10px 15px',
                     transition: 'background-color 0.3s ease-in-out',
                     color : isHovered ? "white" : "black",
