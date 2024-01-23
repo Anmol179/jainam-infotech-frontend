@@ -13,35 +13,14 @@ export default function Footer() {
         <div
         style={{
           display:"flex",
-          justifyContent:"space-between",
+          justifyContent:"center",
           padding:"50px 120px",
           color:"#ffffff",
-          paddingRight:"0px",
+          // paddingRight:"0px",
+          textAlign:"center"
         }}
         >
-            <div>
-              <h5
-              style={{
-                paddingBottom:"7px",
-                fontSize:"20px"
-              }}
-              onClick={(()=>navigate("/"))}
-              >Home</h5>
-              <h5
-              style={{
-                paddingBottom:"7px",
-                fontSize:"20px"
-              }}
-              onClick={(()=>navigate("/about"))}
-              >About Us</h5>
-              <h5
-              style={{
-                paddingBottom:"7px",
-                fontSize:"20px"
-              }}
-              onClick={(()=>navigate("/offer"))}
-              >What we Offer</h5>
-            </div>
+
             <div
             style={{
               width:"40%",
