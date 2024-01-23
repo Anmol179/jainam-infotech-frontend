@@ -6,6 +6,8 @@ import Laptop from '../Pages/Laptop'
 import Spare from '../Pages/Spare'
 import Accessories from '../Pages/Accessories'
 import Admin from '../Pages/Admin'
+import AboutUs from '../Pages/AboutUs'
+import Offer from '../Pages/Offer'
 
 export default function Alljoutes() {
   return (
@@ -16,6 +18,8 @@ export default function Alljoutes() {
         <Route path='/spare-parts' element={<Spare />}></Route>
         <Route path='/accessories' element={<Accessories />}></Route>
         <Route path='/admin' element={<Admin />}></Route>
+        <Route path='/abbout' element={<AboutUs />}></Route>
+        <Route path='/offer' element={<Offer />}></Route>
     </Routes>
   )
 }
