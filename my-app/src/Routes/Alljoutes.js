@@ -5,7 +5,6 @@ import Cctv from '../Pages/Cctv'
 import Laptop from '../Pages/Laptop'
 import Spare from '../Pages/Spare'
 import Accessories from '../Pages/Accessories'
-import Admin from '../Pages/Admin'
 
 export default function Alljoutes() {
   return (
@@ -15,7 +14,6 @@ export default function Alljoutes() {
         <Route path='/laptop' element={<Laptop />}></Route>
         <Route path='/spare-parts' element={<Spare />}></Route>
         <Route path='/accessories' element={<Accessories />}></Route>
-        <Route path='/admin' element={<Admin />}></Route>
     </Routes>
   )
 }
