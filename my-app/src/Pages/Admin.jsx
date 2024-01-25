@@ -11,7 +11,7 @@ export default function Admin() {
 
   const loginFuc = (e) =>{
     e.preventDefault();
-    if(user==="Hitesh Jain" && pass===password){
+    if(user==="Hitesh" && pass==="pass"){
     setLogin(true)
     }
     else{
