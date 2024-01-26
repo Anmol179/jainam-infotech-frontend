@@ -1,6 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
+
+  const navigate = useNavigate();
+
+  const Contact = () =>{
+    navigate("/contact")
+  }
+
   return (
     <div>
       <div
@@ -100,6 +108,7 @@ export default function Home() {
             fontWeight:"500",
             marginRight:"24%"
           }}
+          onClick={Contact}
           >Contact Us</button>
         </div>
       </div>
@@ -149,6 +158,7 @@ export default function Home() {
             fontWeight:"500",
             marginTop:"60px"
           }}
+          onClick={(()=>navigate("/cctv"))}
           >Find out more</button>
         </div>
         <div
@@ -188,6 +198,7 @@ export default function Home() {
             fontWeight:"500",
             marginTop:"20px"
           }}
+          onClick={(()=>navigate("/laptop"))}
           >Find out more</button>
         </div>
       </div>
@@ -227,6 +238,7 @@ export default function Home() {
           borderRadius:"20px",
           marginTop:"100px"
         }}
+        onClick={Contact}
         >Contact Us Today</button>
       </div>
       <div
@@ -270,6 +282,7 @@ export default function Home() {
         fontSize: "20px",
         fontWeight: "500",
       }}
+      onClick={Contact}
         >Contact us</button>
         </div>
       </div>

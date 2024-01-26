@@ -149,7 +149,7 @@ function App() {
     id:"thanksMsg",
     message: ({ steps }) => {
       const userEnteredIssue = steps.enterIssue.value;
-      Setproduct(userEnteredIssue);
+      Setissue(userEnteredIssue);
       return `Thanks For your info, Our technical team will connect with you soon!`;
     },
     end:true
@@ -159,6 +159,14 @@ function App() {
 
   if(path==="/admin"){
     content = <Admin />;
+  }
+  else if(path==="/contact"){
+    content= (
+      <>
+       <Navbar />
+       <Alljoutes />
+      </>
+    )
   }
   else{
     content= (

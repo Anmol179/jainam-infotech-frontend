@@ -92,6 +92,7 @@ const Navbar = () => {
                     transition: 'background-color 0.3s ease-in-out',
                     color : isHovered ? "white" : "black",
                   }}
+                  onClick={(()=>navigate("/contact"))}
                   onMouseOver={handleMouseOver}
                   onMouseOut={handleMouseOut}
                 >Get In Touch</button>
