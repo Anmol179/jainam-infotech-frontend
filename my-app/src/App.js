@@ -51,40 +51,21 @@ function App() {
         </div>
       <Footer />
       <div
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        right: 0,
-        backgroundColor: '#fff',
-        border: '1px solid #ddd',
-        width: '300px',
-        height: '400px',
-        overflow: 'hidden',
-        transition: 'width 0.3s ease, height 0.3s ease',
-      }}
-      className={`chatbot-container-${visible ? 'visible' : 'hidden'}`}>
-        <button
-        
-        style={{
-          color:"#000000",
-          border:"1px solid black",
-        }}
+        className={`chatbot-container ${visible ? 'visible' : 'hidden'}`}
+      >
+        <h5
         onClick={(()=>setVisible(false))}
-        >X</button>
-      <ChatBot 
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        right: 0,
-        backgroundColor: '#fff',
-        border: '1px solid #ddd',
-        width: '300px',
-        height: '400px',
-        overflow: 'hidden',
-        transition: 'width 0.3s ease, height 0.3s ease',
-      }}
-      className={`chatbot-container-${visible ? 'visible' : 'hidden'}`}
-      steps={steps}/>
+        style={{
+          cursor:"pointer",
+          display:"flex",
+          justifyContent:"flex-end",
+          paddingRight:"15px",
+          fontWeight:"600",
+          
+        }}
+        >X</h5>
+        {/* Chatbot content */}
+        <ChatBot steps={steps}/>
       </div>
       </>
     )
