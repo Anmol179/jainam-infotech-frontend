@@ -18,7 +18,7 @@ function App() {
   const[product,Setproduct] = useState("")
   const[issue,Setissue] = useState("")
 
-  console.log(name)
+  console.log(name,phone,product,issue)
 
   const location = useLocation();
   const path = location.pathname;

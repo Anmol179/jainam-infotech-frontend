@@ -13,7 +13,7 @@ export default function Contact() {
             phone:phone,
             message:message
         }
-        // console.log(user)
+        console.log(user)
     }    
   return (
     <div
