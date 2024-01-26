@@ -7,11 +7,13 @@ export default function Admin() {
   const [pass,setPass] = useState("");
   const [login,setLogin] = useState(false);
 
-  const password = process.env.REACT_APP_ADMIN_LOGIN_PASSWORD;
+  const adminPassword = process.env.REACT_APP_ADMIN_LOGIN_PASSWORD;
+
+  console.log(adminPassword)
 
   const loginFuc = (e) =>{
     e.preventDefault();
-    if(user==="Hitesh" && pass==="pass"){
+    if(user==="Hitesh" && pass===adminPassword){
     setLogin(true)
     }
     else{
