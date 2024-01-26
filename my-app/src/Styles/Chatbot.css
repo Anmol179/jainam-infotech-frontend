@@ -1,6 +1,10 @@
 .chatbot-container.visible {
-  width: 300px;
-  height: 400px;
+  width: 370px;
+  height: 500px;
+  z-index: 2;
+  ::-webkit-scrollbar{
+    display: none;
+  }
 }
 
 .chatbot-container.hidden {
@@ -17,6 +21,10 @@
   border: 1px solid #ddd;
   width: 300px; /* Set the initial width */
   height: 400px; /* Set the initial height */
-  overflow: hidden;
+  overflow: auto;
+  ::-webkit-scrollbar{
+    display: none;
+  }
   transition: width 0.3s ease, height 0.3s ease;
+  z-index: 2;
 }
