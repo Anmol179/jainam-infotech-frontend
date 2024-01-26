@@ -73,36 +73,29 @@ function App() {
   },
   {
     id:"accessories",
-    message:()=>{
-      <div>
-        <a href="http://localhost:3000/accessories" >To Get Info about Accessories Click here</a>
-      </div>
-    },
+    component:(
+      <a href="http://localhost:3000/accessories" >To Get Info about Accessories Click here</a>
+    ),
     end:true
   },
   {
     id:"cctvInfo",
-    message:()=>{
-      <div>
-        <a href="http://localhost:3000/cctv" >To Get Info about CCTV Click here</a>
-      </div>
-    },
+    component:(
+      <a href="http://localhost:3000/cctv" >To Get Info about CCTV Click here</a>
+    ),
     end:true
   },
   {
     id:"laptopInfo",
     component:(
       <a 
-      style={{
-        width:"100px"
-      }}
       href="http://localhost:3000/laptop">To Get info about Laptops Click here</a>
     ),
     end:true
   },
   {
     id:"form",
-    message:"Can i known your name",
+    message:"What can I save your name as?",
     trigger:"setNamee"
   },
   {
