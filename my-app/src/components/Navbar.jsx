@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../images/logo.png"
+// import logo from "../images/logo.png"
 import {useNavigate} from "react-router-dom";
 
 const Navbar = () => {
@@ -28,11 +28,11 @@ const Navbar = () => {
         >
             <div>
                 {/* logo */}
-                <img src={logo}alt="" 
+                {/* <img src={logo}alt="" 
                 style={{height:"80px",
                         borderRadius:"8px"
             }}
-                />
+                /> */}
             </div>
             <div
             style={{
