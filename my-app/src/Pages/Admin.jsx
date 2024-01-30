@@ -1,22 +1,46 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import AdminNavbar from '../components/AdminNavbar';
+import { useNavigate } from 'react-router-dom';
 
 export default function Admin() {
 
-
+ 
   const [user,setUser] = useState("");
   const [pass,setPass] = useState("");
   const [login,setLogin] = useState(false);
 
   const adminPassword = process.env.REACT_APP_ADMIN_LOGIN_PASSWORD;
+  const navigate = useNavigate();
 
-  console.log(adminPassword)
+  console.log(adminPassword,pass)
+
+  const logoutFunc = (login) =>{
+    setLogin(!login)
+    // localStorage.setItem("login","0")
+  }
+
+  console.log(login)
+  useEffect(()=>{
+
+    let val = localStorage.getItem("login");
+
+    if(val==="1"){
+      setLogin(true);
+    }
+    else{
+      setLogin(false)
+    }
+  },[])
 
   const loginFuc = (e) =>{
     e.preventDefault();
     if(user==="Hitesh" && pass===adminPassword){
-    setLogin(true)
+      localStorage.setItem('login', '1');
+      setLogin(true)
+      navigate("/admin/cctv");
     }
     else{
+      localStorage.setItem('login', '0');
       alert("Wrong Username or Password.\nPlease try again.");
     }
   }
@@ -97,8 +121,10 @@ export default function Admin() {
   }
 
 
+
   return (
     <>
+    <AdminNavbar login={login} func={logoutFunc}/>
     <h1>Login Success</h1>
     </>
   )

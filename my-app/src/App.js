@@ -8,6 +8,8 @@ import Admin from "./Pages/Admin.jsx";
 import ChatBot from "react-simple-chatbot"
 import { useState } from "react";
 import "./Styles/Chatbot.css"
+import AdminNavbar from "./components/AdminNavbar.jsx";
+import AdminRoute from "./Routes/AdminRoute.jsx";
 
 function App() {
 
@@ -159,6 +161,14 @@ function App() {
 
   if(path==="/admin"){
     content = <Admin />;
+  }
+  else if(path==="/admin/cctv" || path==="/admin/access" || path==="/admin/laptop" || path==="/admin/spare"){
+    content = (
+      <>
+      <AdminNavbar />
+      <AdminRoute />
+      </>
+    )
   }
   else if(path==="/contact"){
     content= (
