@@ -11,6 +11,12 @@ export default function AdminNavbar({login,func}) {
     }
 
 
+    function setLocalStorageOnWindowClose() {
+        localStorage.setItem('login', '0');
+    }
+    
+    window.addEventListener('beforeunload', setLocalStorageOnWindowClose);
+
      const checkLoginstatus = () =>{
         const val = localStorage.getItem("login");
 
